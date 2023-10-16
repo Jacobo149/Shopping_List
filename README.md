@@ -6,7 +6,8 @@ Application uses HTML and CSS to setup framework with JavaScript driving app fun
 
 Application deployed to Netlify. Click link below.  
 
-[Shopping_List](https://papaya-donut-2e8db9.netlify.app/){:target="_blank"}
+<a href="https://papaya-donut-2e8db9.netlify.app/" target="_blank">Shopping List</a>
+
 
 
 
