@@ -3,6 +3,7 @@ const itemInput = document.getElementById('item-input');
 const itemList = document.getElementById('item-list');
 const clearBtn = document.getElementById('clear');
 const itemFilter = document.getElementById('filter');
+const darkMode = document.getElementById('dark-mode-toggle');
 const formBtn = itemForm.querySelector('button');
 let isEditMode = false;
 
@@ -179,6 +180,14 @@ function filterItems(e) {
 
 }
 
+function toggleDarkMode() {
+    if (darkMode.checked) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+}
+
 function checkUI() {
 
     itemInput.value = '';
@@ -205,6 +214,7 @@ function init() {
     itemList.addEventListener('click', onClickItem);
     clearBtn.addEventListener('click', clearItems);
     itemFilter.addEventListener('input', filterItems);
+    darkMode.addEventListener('change', toggleDarkMode);
     document.addEventListener('DOMContentLoaded', displayItems);
 
     checkUI();

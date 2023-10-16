@@ -13,12 +13,31 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Shopping List</title>
+    <style>
+      /* Style the dark mode switch and label */
+      .dark-mode-switch.bottom {
+        position: absolute;
+        bottom: 20px; /* Adjust the value as needed for vertical placement */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px; /* Adjust the width as needed */
+        height: 34px; /* Adjust the height as needed */
+      }
+
+      /* ... (Other switch styles here) ... */
+    </style>
   </head>
   <body>
     <div class="container">
       <header>
         <img src="images/note.png" alt="" />
-        <h1>Shopping List</h1>
+        <h1>ShopEZ</h1>
       </header>
       <form id="item-form">
         <div class="form-control">
@@ -51,6 +70,14 @@
       </ul>
 
       <button id="clear" class="btn-clear">Clear All</button>
+    </div>
+    
+    <div class="dark-mode-switch bottom">
+      <label class="switch">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <span class="slider round"></span>
+      </label>
+      <span class="mode-label">Dark Mode</span>
     </div>
 
     <script src="script.js"></script>
