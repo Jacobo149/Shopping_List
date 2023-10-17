@@ -6,6 +6,7 @@ The application uses HTML and CSS to set up a framework with JavaScript driving 
 - Dark-Mode toggle
 - Update an item by clicking on it
 - Ability to filter items in the list
+- Leverages browser local storage to save items in the list after the application is refreshed
 
 ## How to Use
 In the top textbox, enter the name of the item you wish to add and click "Add Item".  
